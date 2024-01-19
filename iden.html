@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Form</title>
+<style>
+/* Overall form styling */
+form {
+  border: 1px solid rgba(0, 0, 0, 0.15); /* Subtle border */
+  padding: 40px;
+  margin: 0 auto;
+  width: 600px;
+  background-color: #f5f5f5; /* Light gray background */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  font-family: sans-serif;
+}
+
+/* Input fields */
+mark {
+  color: #a94442; /* Darker brown for emphasis */
+}
+
+input, select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Buttons */
+.bouton {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+input[type="submit"] {
+  background-color: #a94442;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="reset"] {
+  background-color: #ccc;
+  color: #333;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Title and image */
+.titre-photo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.titre-photo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover; /* Maintain image aspect ratio */
+}
+
+/* Additional styling */
+body {
+  background-color: #f0f0f0;
+}
+</style>
+</head>
+<body>
+
+<div class="titre-photo">
+  <img src="img.jpg">
+</div>
+
+<form action="/submit" method="post">
+  <p id="da"><mark>Date :</mark>
+    <input type="date">
+  </p>
+  <br>
+
+  <div>
+    <button id="iden0000"><mark>identifiant</mark></button>
+    <input type="text" id="iden" placeholder="Iden0000">
+  </div>
+
+  <p><mark>Nom Op :</mark><br>
+    <input type="text" id="no">
+  </p>
+  <br>
+
+  <p><mark>Ligne :</mark><br>
+    <input type="number" id="l">
+  </p>
+  <br>
+
+  <p><mark>Num :</mark><br>
+    <input type="number" id="num">
+  </p>
+  <br>
+
+  <label class="liste"><mark>probleme :</mark><br>
+    <select id="p">
+      <option>ribon</option>
+      <option>reseaux</option>
+      <option>other</option>
+    </select>
+  </label>
+  <br><br> <br><br>
+
+  <div class="bouton">
+    <input type="submit" value="Validation">
+<input type="reset" value="Annuler" id="bt"></div>
+</form>
+</body>
+</html>
